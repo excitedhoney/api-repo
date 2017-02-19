@@ -1,0 +1,95 @@
+{
+  "id": {
+    "providerName": "admin",
+    "apiName": "user-directory",
+    "version": "v1.0.0"
+  },
+  "uuid": "d78315fe-5917-4480-a329-e354c83bc468",
+  "description": "user directory services",
+  "context": "/ldap/v1.0.0",
+  "contextTemplate": "/ldap/{version}",
+  "tags": [
+    "hr",
+    "employees",
+    "users"
+  ],
+  "documents": [],
+  "lastUpdated": "Oct 17, 2016 2:36:06 PM",
+  "availableTiers": [
+    {
+      "name": "Unlimited",
+      "displayName": "Unlimited",
+      "description": "Allows unlimited requests",
+      "requestsPerMin": 2147483647,
+      "requestCount": 2147483647,
+      "unitTime": 0,
+      "timeUnit": "ms",
+      "stopOnQuotaReached": true
+    }
+  ],
+  "availableSubscriptionLevelPolicies": [],
+  "uriTemplates": [
+    {
+      "uriTemplate": "/*",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    }
+  ],
+  "apiHeaderChanged": false,
+  "apiResourcePatternsChanged": false,
+  "status": "CREATED",
+  "visibility": "public",
+  "endpointSecured": false,
+  "endpointAuthDigest": false,
+  "transports": "http",
+  "advertiseOnly": false,
+  "corsConfiguration": {
+    "corsConfigurationEnabled": false,
+    "accessControlAllowOrigins": [
+      "*"
+    ],
+    "accessControlAllowCredentials": false,
+    "accessControlAllowHeaders": [
+      "authorization",
+      "Access-Control-Allow-Origin",
+      "Content-Type",
+      "SOAPAction"
+    ],
+    "accessControlAllowMethods": [
+      "GET",
+      "PUT",
+      "POST",
+      "DELETE",
+      "PATCH",
+      "OPTIONS"
+    ]
+  },
+  "endpointConfig": "{\"production_endpoints\":{\"url\":\"http://empdir-nuwanbando.herokuapp.com/employees\",\"config\":null,\"template_not_supported\":false},\"endpoint_type\":\"http\"}",
+  "responseCache": "Disabled",
+  "cacheTimeout": 300,
+  "implementation": "ENDPOINT",
+  "scopes": [],
+  "isDefaultVersion": true,
+  "isPublishedDefaultVersion": false,
+  "environments": [
+    "Production and Sandbox"
+  ],
+  "rating": 0.0,
+  "isLatest": true
+}

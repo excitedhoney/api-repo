@@ -1,0 +1,104 @@
+{
+  "id": {
+    "providerName": "admin",
+    "apiName": "sports",
+    "version": "v1.0.0"
+  },
+  "uuid": "36f1d3c4-5195-4ca7-be8b-916da8371e7a",
+  "description": "Sports service",
+  "context": "/sports/v1.0.0",
+  "contextTemplate": "/sports/{version}",
+  "tags": [
+    "organaization",
+    "sports"
+  ],
+  "documents": [],
+  "lastUpdated": "Oct 17, 2016 2:41:15 PM",
+  "availableTiers": [
+    {
+      "name": "Gold",
+      "displayName": "Gold",
+      "description": "Allows 5000 requests per minute",
+      "requestsPerMin": 5000,
+      "requestCount": 5000,
+      "unitTime": 1,
+      "timeUnit": "min",
+      "stopOnQuotaReached": true
+    },
+    {
+      "name": "Unlimited",
+      "displayName": "Unlimited",
+      "description": "Allows unlimited requests",
+      "requestsPerMin": 2147483647,
+      "requestCount": 2147483647,
+      "unitTime": 0,
+      "timeUnit": "ms",
+      "stopOnQuotaReached": true
+    }
+  ],
+  "availableSubscriptionLevelPolicies": [],
+  "uriTemplates": [
+    {
+      "uriTemplate": "/*",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    }
+  ],
+  "apiHeaderChanged": false,
+  "apiResourcePatternsChanged": false,
+  "status": "CREATED",
+  "visibility": "public",
+  "endpointSecured": false,
+  "endpointAuthDigest": false,
+  "transports": "http",
+  "advertiseOnly": false,
+  "corsConfiguration": {
+    "corsConfigurationEnabled": false,
+    "accessControlAllowOrigins": [
+      "*"
+    ],
+    "accessControlAllowCredentials": false,
+    "accessControlAllowHeaders": [
+      "authorization",
+      "Access-Control-Allow-Origin",
+      "Content-Type",
+      "SOAPAction"
+    ],
+    "accessControlAllowMethods": [
+      "GET",
+      "PUT",
+      "POST",
+      "DELETE",
+      "PATCH",
+      "OPTIONS"
+    ]
+  },
+  "endpointConfig": "{\"production_endpoints\":{\"url\":\"http://empdir-nuwanbando.herokuapp.com/employees\",\"config\":null,\"template_not_supported\":false},\"endpoint_type\":\"http\"}",
+  "responseCache": "Disabled",
+  "cacheTimeout": 300,
+  "implementation": "ENDPOINT",
+  "scopes": [],
+  "isDefaultVersion": true,
+  "isPublishedDefaultVersion": false,
+  "environments": [
+    "Production and Sandbox"
+  ],
+  "rating": 0.0,
+  "isLatest": true
+}

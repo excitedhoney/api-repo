@@ -1,0 +1,30 @@
+{
+  "swagger": "2.0",
+  "paths": {
+    "/{id}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "allowMultiple": false,
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "x-auth-type": "Application \u0026 Application User",
+        "x-throttling-tier": "Unlimited"
+      }
+    }
+  },
+  "info": {
+    "title": "profile-service",
+    "version": "v1.0.0",
+    "description": "profile service"
+  }
+}

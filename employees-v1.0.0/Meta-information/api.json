@@ -1,0 +1,145 @@
+{
+  "id": {
+    "providerName": "admin",
+    "apiName": "employees",
+    "version": "v1.0.0"
+  },
+  "uuid": "e1c3713f-8342-4771-893b-e89612d44b1f",
+  "description": "This is an internal HR API",
+  "context": "/emp/v1.0.0",
+  "contextTemplate": "/emp/{version}",
+  "tags": [
+    "hr",
+    "employees"
+  ],
+  "documents": [],
+  "lastUpdated": "Oct 17, 2016 2:23:22 PM",
+  "availableTiers": [
+    {
+      "name": "Bronze",
+      "displayName": "Bronze",
+      "description": "Allows 1000 requests per minute",
+      "requestsPerMin": 1000,
+      "requestCount": 1000,
+      "unitTime": 1,
+      "timeUnit": "min",
+      "stopOnQuotaReached": true
+    },
+    {
+      "name": "Gold",
+      "displayName": "Gold",
+      "description": "Allows 5000 requests per minute",
+      "requestsPerMin": 5000,
+      "requestCount": 5000,
+      "unitTime": 1,
+      "timeUnit": "min",
+      "stopOnQuotaReached": true
+    },
+    {
+      "name": "Silver",
+      "displayName": "Silver",
+      "description": "Allows 2000 requests per minute",
+      "requestsPerMin": 2000,
+      "requestCount": 2000,
+      "unitTime": 1,
+      "timeUnit": "min",
+      "stopOnQuotaReached": true
+    },
+    {
+      "name": "Unlimited",
+      "displayName": "Unlimited",
+      "description": "Allows unlimited requests",
+      "requestsPerMin": 2147483647,
+      "requestCount": 2147483647,
+      "unitTime": 0,
+      "timeUnit": "ms",
+      "stopOnQuotaReached": true
+    }
+  ],
+  "availableSubscriptionLevelPolicies": [],
+  "uriTemplates": [
+    {
+      "uriTemplate": "/{id}",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    },
+    {
+      "uriTemplate": "/*",
+      "httpVerb": "GET",
+      "authType": "Any",
+      "httpVerbs": [
+        "GET"
+      ],
+      "authTypes": [
+        "Any"
+      ],
+      "throttlingConditions": [],
+      "throttlingTier": "Unlimited",
+      "throttlingTiers": [
+        "Unlimited"
+      ],
+      "mediationScript": "null",
+      "scopes": [
+        null
+      ],
+      "mediationScripts": {}
+    }
+  ],
+  "apiHeaderChanged": false,
+  "apiResourcePatternsChanged": false,
+  "status": "CREATED",
+  "visibility": "public",
+  "endpointSecured": false,
+  "endpointAuthDigest": false,
+  "transports": "http",
+  "advertiseOnly": false,
+  "corsConfiguration": {
+    "corsConfigurationEnabled": false,
+    "accessControlAllowOrigins": [
+      "*"
+    ],
+    "accessControlAllowCredentials": false,
+    "accessControlAllowHeaders": [
+      "authorization",
+      "Access-Control-Allow-Origin",
+      "Content-Type",
+      "SOAPAction"
+    ],
+    "accessControlAllowMethods": [
+      "GET",
+      "PUT",
+      "POST",
+      "DELETE",
+      "PATCH",
+      "OPTIONS"
+    ]
+  },
+  "endpointConfig": "{\"production_endpoints\":{\"url\":\"http://empdir-nuwanbando.herokuapp.com/employees\",\"config\":null,\"template_not_supported\":false},\"endpoint_type\":\"http\"}",
+  "responseCache": "Disabled",
+  "cacheTimeout": 300,
+  "implementation": "ENDPOINT",
+  "scopes": [],
+  "isDefaultVersion": true,
+  "isPublishedDefaultVersion": false,
+  "environments": [
+    "Production and Sandbox"
+  ],
+  "rating": 0.0,
+  "isLatest": true
+}
